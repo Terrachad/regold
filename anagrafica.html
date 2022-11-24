@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-header">
+          <div class="nav-title">
+            Nav
+          </div>
+        </div>
+        
+        <div class="nav-links">
+          <a href="/" target="_blank">Home</a>
+          <a href="/anagrafica.html" target="_blank">Anagrafica</a>
+        </div>
+      </div>
+      <div class="container">
+    
+        <form id="mainForm" class="input" name="main-form" >
+            <label for="nome">Nome:<span>*</span></label><br>
+            <input required maxlength="20" pattern="[A-Za-z^' ']{2,20}" type="text" id="nome" name="nome" placeholder="Inserisci nome" ><br>
+
+            <label for="cognome">Cognome:<span>*</span></label><br>
+            <input required maxlength="20" pattern="[A-Za-z^' ']{2,20}" type="text" id="cognome" name="cognome" placeholder="Inserisci cognome"><br>
+    
+            <label for="cf">Codice Fiscale:<span>*</span></label><br>
+            <input required maxlength="16" pattern="[A-Za-z0-9]{16}" type="text" id="codice_fiscale" name="codice_fiscale" placeholder="Inserisci cf"><br>
+
+            <label for="partita_iva">Partita IVA:<span>*</span></label><br>
+            <input required maxlength="11" pattern="[A-Za-z0-9]{1,11}"type="text" id="partita_iva" name="partita_iva" placeholder="Inserisci IVA"><br>
+      
+
+            <label for="data">Data di nascita:<span>*</span></label><br>
+            <input required style="width: 100%;" type="date"  id="data" name="data" placeholder="Inserisci la data di nascita"><br>
+
+          <!--
+            <label for="documento">Documento (pdf 500kb):</label><br>
+            <input type="file"  id="inp_File" name="documento" placeholder="Inserisci la data" ><br>
+
+            <input id="file" type="file" />
+            <button id="upload-button" onclick="doupload()"> Upload </button>
+            <br>  
+            -->
+            <label for="indirizzo">Indirizzo:<span>*</span></label><br>
+            <input required pattern="[A-Za-z0-9]{1,50}" maxlength="50" type="text" id="indirizzo" name="indirizzo" placeholder="Inserisci il tuo indirizzo"><br>
+
+            <label for="civico">N. Civico:<span>*</span></label><br>
+            <input required maxlength="10"  type="text" id="civico" name="civico" placeholder="Inserisci n. civico"><br>
+
+            <label for="comune">Comune:<span>*</span></label><br>
+            <input required maxlength="20" pattern="[A-Za-z]{1,20}"type="text" id="comune" name="comune" placeholder="Inserisci comune"><br>
+
+            <label for="cap">CAP:<span>*</span></label><br>
+            <input required maxlength="5" pattern="[0-9]{5}" type="text" id="cap" name="cap" placeholder="Inserisci CAP"><br>
+
+            <label for="provincia">Provincia:<span>*</span></label><br>
+            <input required maxlength="2" pattern="[A-Za-z]{2}" type="text" id="provincia" name="provincia" placeholder="Inserisci provincia"><br>
+
+            <label for="email">Email:<span>*</span></label><br>
+            <input required type="email" minlength="1" maxlength="20"  id="email" name="email" placeholder="Inserisci il tuo email"><br>
+            
+
+            <label for="telefono">Telefono:<span>*</span></label><br>
+            <input required type="tel" pattern="[0-9]{11,14}" maxlength="14" id="telefono" name="telefono" placeholder="Telefono"><br>
+
+            <button type="submit" class="submit-button">
+                Submit
+            </button>
+
+          </form>
+    
+    
+        <script src="script.js"></script>
+      </div>
+</body>
+</html>

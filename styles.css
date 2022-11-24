@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    
+}
+
+form{
+    margin-top: 5%;
+    display: block;
+    font-weight: 600;
+    margin-inline: auto;
+    width: 500px;
+}
+
+input{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    min-height: 25px;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid #B0BEC5;
+}
+
+
+
+input[type="date"]::-webkit-input-placeholder{ 
+  visibility: hidden !important;
+}
+
+input:invalid {
+  border-color: #DD2C00;
+}
+
+label> span{
+  float:right;
+  color:red;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
